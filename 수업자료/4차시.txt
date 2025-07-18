@@ -22,5 +22,5 @@
  - static
  - relative
  - absolute ( 지정한 부모를 기준으로 원하는 위치에 둘 수 있음)
- - fixed
+ - fixed (스크롤해도 그자리 고정)
  - sticky
