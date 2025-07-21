@@ -1,0 +1,12 @@
+/*이미지 가운데로 옮길때*/
+display:flex;
+justi-  :center;
+ali-  :center;
+
+/*input테투리 없애기*/
+border none
+ouline none
+
+- shift+alt+f  : 줄정리
+- h태그는 기본적으로 마진이 들어가있음(없애고 싶으면 h를 margin 0으로)
+- object-fit: cover; 이미지 비율맞게자르기
