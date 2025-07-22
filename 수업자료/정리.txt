@@ -7,6 +7,9 @@ ali-  :center;
 border none
 ouline none
 
+/*줄간격 넓히기*/
+line-height: px;
+
 - shift+alt+f  : 줄정리
 - h태그는 기본적으로 마진이 들어가있음(없애고 싶으면 h를 margin 0으로)
 - object-fit: cover; 이미지 비율맞게자르기
