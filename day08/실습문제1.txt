@@ -1,0 +1,151 @@
+입력도구  : prompt() 
+출력도구  : alert() , document.write()   적절히 활용한다
+
+
+먼저 풀어보기 
+1) 사과의 무게를 입력받아 200이상이면 고급 아니면 일반으로 분류하기 (출력하시오)
+	let apple;
+        while(true){
+            apple = parseInt(prompt("사과의 무게를 입력하세요"));
+            if(isNaN(apple)==false) break;
+
+            alert("숫자를 입력하세요")
+        }
+        if(apple >= 200){
+            alert("고급사과");
+        }else if(apple <200){
+            alert("일반사과");
+        }else{
+            alert("숫자를 입력해주세요");
+        }
+2) 입력한 수가  3의 배수인지 확인하기 
+	let su = parseInt(prompt("숫자를 입력하세요"));
+        let result = su % 3;
+
+        if(result == 0){
+            alert("3의 배수입니다");
+        }else{
+            alert("3의 배수가 아닙니다");
+        }
+ 
+#문제1
+1. 자신의 정보를 출력하기 (변수이용하기)
+	let name = "이성빈"
+        let age = 25
+        let gender = "남자"
+        let home = "서교동"
+
+        alert("제 이름은 "+name+"이고, 나이는 "+age+"세 "+gender+"로 "+home+"에 거	주중입니다.");
+
+
+2. 짝수, 홀수 판별
+사용자가 입력한 숫자가 짝수인지 홀수인지 판별하는 프로그램을 작성하세요.
+	let num;
+        
+        while(true){
+            num = parseInt(prompt("숫자를 입력하세요")); // ==NaN(숫자가 아님)
+            // "안녕"  //   isNaN()
+            alert( isNaN(num));     // true; (숫자가 아니다 )
+
+            /* if( isNaN(num)==false ){       // false (숫자이다)
+               break;
+            } */
+
+           if( !isNaN(num)  ){       // false (숫자이다) => true
+               break;
+            }
+        }
+        
+        let result2 = num % 2
+        if(result2 == 0){
+            alert(num+"은(는) 짝수입니다.");
+        }else{
+            alert(num+"은(는) 홀수입니다.");
+        }
+
+
+3.  이름 , 국어, 영어, 수학 3과목이 입력될 때   총점과  평균을 출력하기 
+	let name2 = prompt("이름");
+        let korean = parseInt(prompt("국어성적"));
+        let english = parseInt(prompt("영어성적"));
+        let math = parseInt(prompt("수학성적"));
+        let sum = korean+english+math;
+        let average = sum / 3;
+        
+        alert(name2+"의 총점은 "+sum+"점 이고, 평균은 "+average+"점 이다.");
+
+
+4. 최대값 구하기   
+ 사용자가 입력한 세 개의 숫자 중 가장 큰 숫자를 출력하세요. 
+ 	let num1 = parseInt(prompt());
+        let num2 = parseInt(prompt());
+        let num3 = parseInt(prompt());
+        let max = Math.max(num1, num2, num3);
+
+        alert("최대값은 "+max);
+
+5.  5단 출력 (구구단 5단 출력하기)
+	for(let i=1; i<=9; i++){
+            console.log("5 * "+ i +" = " + 5*i);
+            // document.write("5 * "+ i +" = " + 5*i + "<br>");
+        }
+
+
+6.  7단 출력 (구구단 7단 출력하기)
+	for(let i=1; i<=9; i++){
+            console.log("7 * "+ i +" = " + 7*i);
+            // document.write("7 * "+ i +" = " + 7*i + "<br>");
+        }
+ 
+7. 3월 배수, 5의 배수  3과5의 배수 출력하기
+1부터 100까지 숫자를 순회하며 다음 조건에 맞게 출력하세요:
+
+3의 배수: "3의배수"
+5의 배수: "5의 배수"
+3과 5의 공배수: "3과 5의 배수"
+나머지 숫자: 해당 숫자
+ 
+8. 점수에 따른 등급 
+사용자가 입력한 점수에 따라 다음 등급을 출력하세요:
+
+90점 이상: "A"
+80점 이상: "B"
+70점 이상: "C"
+60점 이상: "D"
+60점 미만: "F"
+
+9.   수를 입력 받아 제곱을 구하기
+  
+ 
+ 
+10 . 숫자 두 개의 합
+사용자가 입력한 두 숫자를 더한 결과를 출력하세요.
+ 
+
+11. 사칙연산 계산기  (if, switch문)
+사용자가 입력한 두 숫자와 연산자(+, -, *, /)를 사용하여 결과를 출력하세요.
+
+  
+ 
+ 
+12. 홀수만 출력
+  사용자가 입력한 숫자 N까지의 숫자 중 홀수만 출력하세요.
+
+
+
+  
+13.  "stop"입력될 때까지 입력한 입력을 출력하기
+
+
+
+14.   9번문제를   3번 반복하게 하시오
+
+
+15.   9번을  음수가  입력될 때 까지 반복하기
+
+
+16.  원주(원의 둘레 ) 구하기   : 지름을 입력받아 원주 구하기
+
+
+17.  원의 넓이 구하기 : 지름을 입력받아 원의 넓이 구하기 
+
