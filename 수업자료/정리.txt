@@ -1,3 +1,4 @@
+*HTML+CSS
 /*이미지 가운데로 옮길때*/
 display:flex;
 justi-  :center;
@@ -13,3 +14,15 @@ line-height: px;
 - shift+alt+f  : 줄정리
 - h태그는 기본적으로 마진이 들어가있음(없애고 싶으면 h를 margin 0으로)
 - object-fit: cover; 이미지 비율맞게자르기
+
+*JAVASCRIPT
+변수는 하나의 값만 기억함->새로운 값이 오면 기존값은 지워짐
+
+-리터럴: 값 자체
+-변수: 값을 담는 그릇
+-상수: 정해진 변수값(const같이 선언이 정해짐)
+
+함수안에 return은 나중에 명령이 아닌 값으로 쓰일때 사용되면 꼭 써줌
+
+
+
