@@ -24,5 +24,7 @@ line-height: px;
 
 함수안에 return은 나중에 명령이 아닌 값으로 쓰일때 사용되면 꼭 써줌
 
+forEach, map 배열매서드중요
+
 
 

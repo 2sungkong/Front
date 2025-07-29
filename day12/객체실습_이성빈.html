@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* const snack = {
+            name: "감자칩",
+            price: 1500,
+            stock: 50,
+            flavors: ["original", "cheese"],
+            manufacturing: {
+                country: "Korea",
+                factory: "경기도 안양  공장"
+            },
+            promotions: {
+                discount: 10, // 10% 할인
+                offerValidUntil: "2025-01-31"
+            }
+        };
+
+        // 맛(flavors) 종류 출력하기
+        console.log(snack.flavors);
+
+        for(let i=0; i<snack.flavors.length; i++){
+            alert(snack.flavors[i]);
+        }
+        // promotions의 discount정보 출력하기
+        console.log(snack.promotions.discount); */
+
+
+
+        let books = [
+            {
+                name: "가공범",
+                writer: "히가시노 게이고",
+                price: 19800,
+                brand: "북다",
+                type: "추리",
+
+                info: function () {
+                    alert(`${this.writer} 작가님의 ${this.name}이라는 책입니다.`);
+                }
+            },
+            {
+                name: "다크심리학",
+                writer: "다크 사이드 프로젝트",
+                price: 19710,
+                brand: "어센딩",
+                type: "심리",
+
+                info: function () {
+                    alert(`${this.writer}의 ${this.name}이라는 책입니다.`);
+                }
+            },
+            {
+                name: "료의 생각 없는 생각",
+                writer: "료",
+                price: 18000,
+                brand: "열림원",
+                type: "에세이",
+
+                info: function () {
+                    alert(`${this.writer}작가님의 ${this.name}이라는 책입니다.`);
+                }
+            }
+        ];
+
+        let book = prompt("추리, 심리, 에세이 중 택 1");
+
+        /* if (book == books[0].type) {
+            books[0].info();
+        } else if (book == books[1].type) {
+            books[1].info();
+        } else if (book == books[2].type) {
+            books[2].info();
+        } */
+
+        books.forEach(function(item){
+            if(book == item.type){
+            item.info();
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
