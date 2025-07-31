@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function addAtag() {
+            const aTag = document.createElement("a");
+            aTag.href = "https://www.naver.com";
+            
+            aTag.textContent = "Naver로 가자";
+
+            const wrap = document.getElementById("wrap");
+            wrap.appendChild(aTag);
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="addAtag()">a태그 생성</button>
+
+    <div id="wrap"></div>
+</body>
+
+</html>

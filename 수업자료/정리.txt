@@ -26,5 +26,18 @@ line-height: px;
 
 forEach, map 배열매서드중요
 
+- 자바스크립트를 HTML에서 사용할 떄는  id(문서당 한개만): #사용, class(문서에 여러개): .사용한다. 
+- getElementById는 꼭 변수에 넣어 사용
+- getElementsByClassName는 배열이라 무조건 뒤에 []인덱스값도 넣어서 선언
+- querySelector는 id, class 둘다 사용가능해서 #과 .으로 그걸 구분함(그것들 중 첫번째 한개만 선택해서 적용)
+- querySelectorAll은 해당걸 모두 선택함(배열이 됨으로 하나만 쓸거면 []인덱스를 쓰거나 위에껄 쓰고 아니면 forEach를 써서 반복문에 넣어 적용함!!)
+
+innerHTML : div, span같이 사이에 있는것, HTMl태그도 같이 출력 <->textcontent는 내용만 출력
+value: input같은 걸로 value가 할당되어있음
+
+쌍따옴표가 없으면 변수로 인식. 불러오는건 거의 쌍따옴표해야함.
+
+변수.classList.add("스타일변수")하면 자바스크립트에 스타일추가가능
+
 
 
