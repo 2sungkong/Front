@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .style1 {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            margin-top: 10px;
+
+        }
+    </style>
+
+    <script>
+
+        function addATag() {
+            console.log("Asdfas");
+
+            // 태그를 생성한다
+            const aTag = document.createElement("a");
+            aTag.href = "https://www.naver.com";
+            aTag.target = "_blank";
+            aTag.textContent = "Naver로 가자";
+            aTag.classList.add("style1")
+
+            // 부모를 가져온다 
+            const wrap = document.getElementById("wrap");
+
+            // 부모에 추가한다
+            wrap.appendChild(aTag);
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="addATag()"> a태그 생성</button>
+
+    <!-- 부모영역으로 정하기 -->
+    <div id="wrap"></div>
+
+</body>
+
+</html>

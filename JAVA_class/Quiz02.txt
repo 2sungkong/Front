@@ -1,0 +1,75 @@
+1. 맞는 수식을 작성하시오
+(1) no >= 4
+(2) 2<=kimchi<=8
+(3) -2<=book<=0 || 5<=book<=8
+
+2. 변수 city에 최종적으로 저장되는 수는 얼마인가?
+4
+
+3. 다음 수식은 참인지 거짓인지?
+(1) false 
+(2) true
+(3) true
+
+4. 다음 결과값 작성
+System.out.println("c:" + c); ->00000100 : 4
+System.out.println("d:" + d); ->00000110 : 6
+System.out.println("e:" + e); ->00000010 : 2
+
+System.out.println("x:" + x); ->False
+System.out.println("y:" + y); ->False
+System.out.println("z:" + z); ->True
+
+5. 다음 결과값 작성
+c=11+21=32, a=11, b=21
+d=12+22=34, a=11, b=21
+e=12+22=34, a=12, b=21
+f=11+20=31, a=12, b=20
+
+System.out.println("c:" + c); ->c:32
+System.out.println("d:" + d); ->d:34
+System.out.println("e:" + e); ->e:34
+System.out.println("f: + f); ->f:31
+
+6. 결과값을 예상해보기
+(1) KOSTA
+(2) 30
+(3) 115
+(4) a+b:100200
+(5) 300=100200입니다.
+
+7. 출력결과를 적으세요
+(1) 12
+(2) true 
+(3) 131
+(4) Java
+(5) 30
+
+8. 조건식으로 표현하시오
+(1) char ch=0;
+     if(ch == "x" || ch == "X"){}
+(2) if(ch>=0 && ch<=9){}
+(3) if(ch>="A" && ch<="Z") || (ch>="a"&&ch<="z")
+(4) int year="";
+     if(year%400 == 0)||(year%4==0&&year!%100=0)
+(5) boolean powerOn="";
+     if(!powerOn)
+     
+9. 컴파일에러가 발생하는 것은 무엇
+(4)
+
+10. 컴파일에러가 발생하는 것은 무엇
+(3)
+
+11. 다음 문장을 수행한 후 z값?
+6
+
+12. 다음 문장을 실행하면 출력값?
+10
+
+
++유니코드
+0=48
+a=97
+A=65
+

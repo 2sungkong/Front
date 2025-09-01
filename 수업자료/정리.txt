@@ -1,0 +1,75 @@
+*HTML+CSS
+/*이미지 가운데로 옮길때*/
+display:flex;
+justi-  :center;
+ali-  :center;
+
+/*input테투리 없애기*/
+border none
+ouline none
+
+/*줄간격 넓히기*/
+line-height: px;
+
+- shift+alt+f  : 줄정리
+- h태그는 기본적으로 마진이 들어가있음(없애고 싶으면 h를 margin 0으로)
+- object-fit: cover; 이미지 비율맞게자르기
+
+*JAVASCRIPT
+변수는 하나의 값만 기억함->새로운 값이 오면 기존값은 지워짐
+
+-리터럴: 값 자체
+-변수: 값을 담는 그릇
+-상수: 정해진 변수값(const같이 선언이 정해짐)
+
+함수안에 return은 나중에 명령이 아닌 값으로 쓰일때 사용되면 꼭 써줌
+
+forEach, map 배열매서드중요
+
+- 자바스크립트를 HTML에서 사용할 떄는  id(문서당 한개만): #사용, class(문서에 여러개): .사용한다. 
+- getElementById는 꼭 변수에 넣어 사용
+- getElementsByClassName는 배열이라 무조건 뒤에 []인덱스값도 넣어서 선언
+- querySelector는 id, class 둘다 사용가능해서 #과 .으로 그걸 구분함(그것들 중 첫번째 한개만 선택해서 적용)
+- querySelectorAll은 해당걸 모두 선택함(배열이 됨으로 하나만 쓸거면 []인덱스를 쓰거나 위에껄 쓰고 아니면 forEach를 써서 반복문에 넣어 적용함!!)
+
+innerHTML : div, span같이 사이에 있는것, HTMl태그도 같이 출력 <->textcontent는 내용만 출력
+value: input같은 걸로 value가 할당되어있음
+
+쌍따옴표가 없으면 변수로 인식. 불러오는건 거의 쌍따옴표해야함.
+
+변수.classList.add("스타일변수")하면 자바스크립트에 스타일추가가능
+
+*JAVA
+문자형(string)이 젤크다. byte순서이다. 때문에 연산에서 자료형을 먼저 택한후 연산한다.
+
+자바는 내소스 안으로 밖으로 나가는건 다 문자열이다(scanner나 parseint를 쓰는이유)
+
+출력을 마지막에 몰아넣기위해 반복문 제어문을 사용할떄는 변수선언에서 초기화를 해줘야함(char=0, String은 ""으로)
+
+-Export : 우클릭 export->general->achive file
+-Import : 우클릭 import->general->Exisiting~->select achive file
+
+메모리영역이 부족해서 함수를 호출할때는 블록단위로 끊어서 움직이기 때문에 변수를 새로 선언해준다. 전역안에 있는 변수는 사용할 수 X(사라지기 때문)
+
+데이터접근방식
+1. 점연산자, 2. 함수, 3. 생성자
+
+클래스안에는 변수, 함수, 생성자가 있다.
+
+this : 블록단위로 끊기는 변수이름을 같게하기 위해서 
+
+생성자가 없으면 디폴트생성자가 불러와져서 x=0, y=0이됨
+
+static은 선언만 클래스안에 하기 때문에 객체로 접근(점연산자) 불가, 클래스명으로 접근해야함!!(this. 이나 a.이렇게는 사용 X -> heap영역이기 떄문)
+
+static함수는 static변수/함수만 가져다 사용할 수 있다.
+
+상속을 안할거면 private써도됨. 근데 상속할거면 protected로 써야함.(public은 노상관)
+
+추상함수가 1개라도 포함된 클래스는 추상클래스라 abstract필수임
+
+public은 다 가능, protected&default는 상속 O&동일패키지내 접근가능, private는 상속&외부접근 듈다 불가
+
+배열은 추가,삭제,수정불가/ collection(List, get, set방식)은 다가능(객체를 모아서 관리!)
+List:순서예측가능
+

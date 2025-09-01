@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>오늘의 메시지</h3>
+    <img src="" id="ms">
+
+    <!-- <h3 id="wrap">볶음밥레시피보기</h3>
+    <img src="" id="food"> -->
+
+
+    <script>
+        // 행운이미지 랜덤출력
+        function lucky() {
+            let images = [
+                "data:image/jpeg;base64,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",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9BpZu0tALjTDs-hM_C6jr5ZIoXKz2SsFEIw&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSulSNGAlYxI-VSBd5309Qf254M6biTJ6ce4Q&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYM6cPxaili1U3-GXmrghNKce0NPGKZ1C9A&s"
+            ];
+
+            let index = Math.floor(Math.random() * images.length);
+            return images[index];
+        }
+
+        alert("행운이미지 출력하기");
+
+        let result = lucky();
+
+        let img_tag = document.getElementById("ms");
+        img_tag.src = result;
+
+
+
+
+
+
+
+
+
+
+
+        // 볶음밥레시피보기
+        // let foods = [
+        //     "https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxOTA2MTBfMjYz%2FMDAxNTYwMTU1OTkxMTI5.h4j-kaA9shI6tpJGwwx_IeWiK-OspnXFYBXIocer1Rgg.PH-Wv-Ud6UYKwYlYW-dTIleqnqgaO1FJ5O2VnX2A4bMg.JPEG%2FexternalFile.jpg&type=a340",
+        //     "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20130221_192%2Fwlddudkrkr_1361426376523lAay5_JPEG%2F%25BB%25E7%25C1%25F8130221_002.jpg&type=a340",
+        //     "https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20160826_164%2Fbackhee79_1472207946560CdGVl_JPEG%2F1472207897443.jpg&type=a340",
+        //     "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20120718_142%2Fdexter012_1342548636012zyMLI_JPEG%2FIMG_2465.JPG&type=a340",
+        // ]
+
+        // let steps = [
+        //     "1. 재료를 손질한다",
+        //     "2. 볶는다",
+        //     "3. 밥과 소스를 넣는다",
+        //     "4. 먹는다"
+        // ];
+
+        // let foodTag = document.getElementById("food");
+        // let wrapTag = document.getElementById("wrap");
+
+
+        // function 볶음밥만들기() {
+        //     alert(steps[0]);
+            
+        //     alert(steps[1]);
+            
+        //     alert(steps[2]);
+            
+        //     alert(steps[3]);
+            
+        // }
+
+        // let result = 볶음밥만들기();  //함수호출 
+        
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

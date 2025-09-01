@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 먼저풀어보기 (1)사과의 무게를 입력받아 200 이상은 고급 아니면 일반으로 분류출력
+        // let apple;
+        // while(true){
+        //     apple = parseInt(prompt("사과의 무게를 입력하세요"));
+        //     if(isNaN(apple)==false) break;
+
+        //     alert("숫자를 입력하세요")
+        // }
+        // if(apple >= 200){
+        //     alert("고급사과");
+        // }else if(apple <200){
+        //     alert("일반사과");
+        // }else{
+        //     alert("숫자를 입력해주세요");
+        // }
+
+        // 먼저풀어보기 (2)입력한 수가 3의 배수인지 확인하기
+        // let su = parseInt(prompt("숫자를 입력하세요"));
+        // let result = su % 3;
+
+        // if(result == 0){
+        //     alert("3의 배수입니다");
+        // }else{
+        //     alert("3의 배수가 아닙니다");
+        // }
+
+        // 1. 자신의 정보를 출력하기
+        // let name = "이성빈"
+        // let age = 25
+        // let gender = "남자"
+        // let home = "서교동"
+
+        // alert("제 이름은 "+name+"이고, 나이는 "+age+"세 "+gender+"로 "+home+"에 거주중입니다.");
+
+        // 2. 짝수, 홀수 판별-사용자가 입력한 숫자가 짝수인지 홀수인지 판별하는 프로그램을 작성하시오
+        // let num;
+        
+        // while(true){
+        //     num = parseInt(prompt("숫자를 입력하세요")); // ==NaN(숫자가 아님)
+        //     // "안녕"  //   isNaN()
+        //     alert( isNaN(num));     // true; (숫자가 아니다 )
+
+        //     /* if( isNaN(num)==false ){       // false (숫자이다)
+        //        break;
+        //     } */
+
+        //    if( !isNaN(num)  ){       // false (숫자이다) => true
+        //        break;
+        //     }
+        // }
+        
+        // let result2 = num % 2
+        // if(result2 == 0){
+        //     alert(num+"은(는) 짝수입니다.");
+        // }else{
+        //     alert(num+"은(는) 홀수입니다.");
+        // }
+
+        // 3. 이름, 국어, 영어, 수학 3과목이 입력될 때 총점과 평균 출력하기
+        // let name2 = prompt("이름");
+        // let korean = parseInt(prompt("국어성적"));
+        // let english = parseInt(prompt("영어성적"));
+        // let math = parseInt(prompt("수학성적"));
+        // let sum = korean+english+math;
+        // let average = sum / 3;
+        
+        // alert(name2+"의 총점은 "+sum+"점 이고, 평균은 "+average+"점 이다.");
+
+        // 4. 최대값 구하기
+        let num1 = parseInt(prompt());
+        let num2 = parseInt(prompt());
+        let num3 = parseInt(prompt());
+        let max = Math.max(num1, num2, num3);
+
+        alert("최대값은 "+max);
+        
+
+
+
+    </script>
+
+
+</body>
+</html>

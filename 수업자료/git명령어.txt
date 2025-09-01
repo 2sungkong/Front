@@ -1,0 +1,9 @@
+git config --global user.name "2sungkong"
+git config --global user.email "sb9192@naver.com"
+
+--파일 업데이트할때--
+git add .
+
+git commit -m "메시지"
+
+git push origin main

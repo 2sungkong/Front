@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let books = [
+            {
+                name: "가공범",
+                writer: "히가시노 게이고",
+                price: 19800,
+                brand: "북다",
+                type: "추리",
+            },
+            {
+                name: "다크심리학",
+                writer: "다크 사이드 프로젝트",
+                price: 19710,
+                brand: "어센딩",
+                type: "심리",
+            },
+            {
+                name: "료의 생각 없는 생각",
+                writer: "료",
+                price: 18000,
+                brand: "열림원",
+                type: "에세이",
+            }
+        ];
+
+        books.forEach(function (item) {
+            alert(`${item.name}은 ${item.type}장르의 베스트셀러로 가격은 ${item.price}원 입니다.`);
+        });
+
+        // let result = books.map(function (item, index) {
+        //     let booksInfo = "책 이름은 " + item.name ;
+        //     return booksInfo;
+        // });
+        // console.log(result);
+
+
+        let result2 = books.map(function (item, index) {
+            item.introduce = `이 책은 전체 베스트셀러 ${index + 1}등입니다!`;
+            return item;
+        });
+        console.log(result2);
+
+
+    </script>
+</body>
+
+</html>

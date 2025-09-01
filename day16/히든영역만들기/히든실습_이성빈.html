@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+
+            background-image: url(https://image.istarbucks.co.kr/upload/store/skuimg/2025/06/[9200000000479]_20250626095418690.jpg);
+            background-position: center;
+            background-size: cover;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+        .hidden-wrap{
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            background-color: gainsboro;
+            opacity: 0.8;
+
+            position: absolute;
+            right: -100%;
+      
+            text-align: center;
+            line-height: 1.8;
+
+            transition: 1.5s;
+        
+        }
+
+        .hidden-wrap .title{
+            margin-top: 50px;
+        }
+
+        .item:hover .hidden-wrap{
+            right: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="item">
+        <div class="hidden-wrap">
+            <h3 class="title">나이트로 콜드 브루</h3>
+            <p><span style="border-bottom: 2px solid gray;">(나이트로 콜드 브루 매장 한정)</span><br>
+                나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마!<br>
+                부드러운 목 넘김과 완벽한 밸런스에 커피 본연의 단맛을 경험할 수 있습니다.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .order ul{
+            width: 1000px;
+            list-style: none;
+            border: 1px solid black;
+            padding: 0;
+            margin: 0 auto;
+
+            display: flex;
+            /* flex-wrap: nowrap; 줄 안바꾸고 싶을때 */
+            flex-wrap: wrap;
+        }
+
+        /* 상품 박스 */
+        .order li{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            
+            border-right: 20px;
+            padding: 10px;
+        }
+        .order img{
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        .footer{
+            width: 1000px;
+            border: 1px solid blue;
+            padding: 0;
+            margin: 0 auto;
+            background-color: rgb(19, 19, 19);
+        }
+        .f1{
+            width: 100%;
+            border: 1px solid black;
+            
+        }
+        .f1 ul{
+            list-style: none;
+            display: flex;
+        }
+        .f1 a{
+            margin-right: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .f2{
+            display: flex;
+            width: 100%;
+            border: 1px solid black;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .f2-1{
+            width: 60%;
+            color: aliceblue;
+
+            padding: 10px;
+        }
+        .f2-2{
+            width: 20%;
+            color: aliceblue;
+
+            padding: 10px;
+        }
+        .f2-3{
+            width: 20%;
+            color: aliceblue;
+
+            padding: 10px;
+        }
+        .f3{
+            width: 100%;
+            border: 1px solid black;
+            background-color: black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+       
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="order">
+    <ul>
+        <li>
+            <a href=""><img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250620/c24e3ab8503cc4e22c1d3d6ae041752e.jpg" alt="1">
+            <h3>골드키위</h3>
+            <p>3,500 원</p></a>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250529/7329de1720f2081a8f03e75e207add02.jpg" alt="2">
+            <h3>리치</h3>
+            <p>3,500 원</p>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250714/53ec6f3a3ad8abe890e18f50885c4985.jpg" alt="3">
+            <h3>청사과</h3>
+            <p>3,500 원</p>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250414/b3f37d98125ae3ab602d1439103e9bb0.jpg" alt="4">
+            <h3>블루베리</h3>
+            <p>4,500 원</p>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250529/767c8f455ec8a576c65243de76eeb7d7.jpg" alt="5">
+            <h3>살구</h3>
+            <p>4,500 원</p>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250604/3e3bfb6406733762fb203d844d5ac940.jpg" alt="6">
+            <h3>천도복숭아</h3>
+            <p>4,500 원</p>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250703/5473a289fa7e5da4f21ceec001bf1351.jpg" alt="7">
+            <h3>체리</h3>
+            <p>5,500 원</p>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250703/12bc4b862fca33472dc3a6662b25efaf.jpg" alt="8">
+            <h3>수박</h3>
+            <p>5,500 원</p>
+        </li>
+        <li>
+            <img src="https://ecimg.cafe24img.com/pg1313b61059423007/orangec1/web/product/small/20250616/4dac10a1fb2320041de9f8d70d409751.jpg" alt="9">
+            <h3>레몬</h3>
+            <p>5,500 원</p>
+        </li>
+    </ul>
+    </div>
+    <div class="footer">
+        <div class="f1">
+            <ul>
+                <li><a href="">이용안내</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보보호정책</a></li>
+            </ul>
+        </div>
+        <div class="f2">
+            <div class="f2-1">
+                <h3>CONTACT US</h3>
+                <p>법인명(상호) : 올프레쉬 농업회사법인 주식회사     대표자(성명) : 조향란<br>
+                   사업자 등록번호 안내 : [223-81-18174] 통신판매업 신고 2020-성남중원-0219 [사업자정보확인]<br>
+                   전화 : 1577-9185<br>     
+                   주소 : 13201 경기도 성남시 중원구 갈마치로288번길 14 (상대원동) 성남SKV1tower A동 224호<br>
+                   개인정보보호책임자 : 올프레쉬 농업회사법인 주식회사(allfresh@allfresh.co.kr)<br>
+                   Contact for more information.</p>
+            </div>
+            <div class="f2-2">
+                <h3>C/S CENTER</h3>
+                <p>평일 10:00 - 17:00 (점심 12:00 - 13:00)<br>
+                   <br>
+                   토/일 및 기타공휴일 휴무<br>
+                   <br>
+                   <span style="color: orangered; font-size: 25px;">02-1577-0000</span><br>
+                   <br>
+                   업무 시간 외에는 게시판으로 문의 바랍니다.</p>
+            </div>
+            <div class="f2-3">
+                <h3>배송/반품정보</h3>
+                <p>배송조회 : 로젠택배<br>
+                   <br>
+                   주문마감 : 13시 이전 주문 시 당일 출고<br>
+                   <br>
+                   반품주소 : 경기도 성남시 중원구 갈마치로288번길 14<br>
+                   <br>
+                   A동 224호(SK V1 TOWER)</p>
+            </div>
+        </div>
+        <div class="f3">
+            <p><span style="color: aliceblue;">© Copyright ⓒ 올프레쉬 농업회사법인 주식회사. All Rights Reserved.</span></p>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
